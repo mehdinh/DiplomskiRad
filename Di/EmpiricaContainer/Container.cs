@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiContainer
+namespace EmpiricaContainer
 {
-    public class EmpiricaContainer
+    public class Container
     {
-
     }
 }

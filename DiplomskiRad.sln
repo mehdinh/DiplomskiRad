@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiContainer", "DiContainer\DiContainer.csproj", "{289710F1-06F2-468E-ABCB-627643CE4764}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Di", "Di", "{8858BCDC-D9B9-4CFA-81B1-07A19E981C33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{CB370F23-1692-4DEC-A37B-2EF92048FF1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpiricaContainer", "Di\EmpiricaContainer\EmpiricaContainer.csproj", "{5A4844F4-C25C-4341-9300-550B89EF3CBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +15,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{289710F1-06F2-468E-ABCB-627643CE4764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{289710F1-06F2-468E-ABCB-627643CE4764}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{289710F1-06F2-468E-ABCB-627643CE4764}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{289710F1-06F2-468E-ABCB-627643CE4764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4844F4-C25C-4341-9300-550B89EF3CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4844F4-C25C-4341-9300-550B89EF3CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4844F4-C25C-4341-9300-550B89EF3CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4844F4-C25C-4341-9300-550B89EF3CBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A4844F4-C25C-4341-9300-550B89EF3CBA} = {8858BCDC-D9B9-4CFA-81B1-07A19E981C33}
 	EndGlobalSection
 EndGlobal
