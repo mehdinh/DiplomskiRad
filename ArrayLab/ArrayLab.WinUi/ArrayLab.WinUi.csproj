@@ -52,6 +52,8 @@
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="IArrayFuncionExtension.cs" />
+    <Compile Include="IArrayLoaderExtension.cs" />
     <Compile Include="IExtension.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
