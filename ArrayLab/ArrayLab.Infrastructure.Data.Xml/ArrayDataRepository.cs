@@ -8,5 +8,6 @@ namespace ArrayLab.Infrastructure.Data.Xml
 {
     public class ArrayDataRepository
     {
+        
     }
 }
