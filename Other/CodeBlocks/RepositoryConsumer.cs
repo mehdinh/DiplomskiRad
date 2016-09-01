@@ -8,10 +8,16 @@ namespace CodeBlocks
 {
     public class RepositoryConsumer
     {
+        public RepositoryConsumer(Repository repository)
+        {
+            this.repository = repository;
+        }
+
+        private Repository repository;
+
         public void Consume()
         {
-            ILogger logger = new ConsoleLogger();
-            Repository repository = new Repository(logger);
+            // Upotreba repository klase je spremna.    
         }
     }
 }
