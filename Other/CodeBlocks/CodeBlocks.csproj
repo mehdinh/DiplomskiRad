@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A4844F4-C25C-4341-9300-550B89EF3CBA}</ProjectGuid>
+    <ProjectGuid>{503A34CE-7C7C-410F-9367-EE5D7CE9E857}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmpiricaContainer</RootNamespace>
-    <AssemblyName>EmpiricaContainer</AssemblyName>
+    <RootNamespace>CodeBlocks</RootNamespace>
+    <AssemblyName>CodeBlocks</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,14 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Container.cs" />
-    <Compile Include="ContainerException.cs" />
-    <Compile Include="IContainer.cs" />
-    <Compile Include="Lifetime.cs" />
-    <Compile Include="NamedTypeRegistration.cs" />
+    <Compile Include="ConsoleLogger.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeRegistration.cs" />
-    <Compile Include="TestingFile.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="RepositoryConsumer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
