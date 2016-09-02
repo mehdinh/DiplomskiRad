@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodeBlocks
 {
-    public class ConsoleLogger : ILogger
+    public class FileLogger : ILogger
     {
         public void Log(string text)
         {
-            Console.WriteLine(DateTime.Now.ToString() + " " + text);
+            System.IO.File.AppendAllText("log.txt", DateTime.Now.ToString() + " " + text + Environment.NewLine);
         }
     }
 }
