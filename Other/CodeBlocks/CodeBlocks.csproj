@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrap.cs" />
     <Compile Include="CompositionRoot.cs" />
     <Compile Include="ConsoleLogger.cs" />
     <Compile Include="EmailService.cs" />
     <Compile Include="FileLogger.cs" />
     <Compile Include="ILogger.cs" />
+    <Compile Include="InjectionMemberAttribute.cs" />
     <Compile Include="ISpamFilter.cs" />
     <Compile Include="MySpamFilter.cs" />
     <Compile Include="Person.cs" />
@@ -52,6 +54,12 @@
     <Compile Include="Repository.cs" />
     <Compile Include="RepositoryConsumer.cs" />
     <Compile Include="UnstructuredSamples.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Di\EmpiricaContainer\EmpiricaContainer.csproj">
+      <Project>{5a4844f4-c25c-4341-9300-550b89ef3cba}</Project>
+      <Name>EmpiricaContainer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

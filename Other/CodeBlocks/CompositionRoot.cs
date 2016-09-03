@@ -20,8 +20,10 @@ namespace CodeBlocks
             ILogger logger = new FileLogger();
             Repository repository = new Repository(logger);
             RepositoryConsumer consumer = new RepositoryConsumer(repository);
-            ISpamFilter spamFilter = new MySpamFilter();
+            ISpamFilter spamFilter = new MySpamFilter(logger); // Logger je proslijeđen konstrukoru klase MySpamFilter
             EmailService emailService = new CodeBlocks.EmailService(spamFilter, logger);
+
+            Bootstrap.Configure();
         }
     }
 }

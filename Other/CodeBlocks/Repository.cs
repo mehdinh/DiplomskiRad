@@ -25,5 +25,14 @@ namespace CodeBlocks
             logger.Log("Učitavanje podataka o osobi čiji je ID " + id.ToString());
             throw new NotImplementedException();
         }
+
+        [InjectionMember]
+        public ILogger Logger { get; set; }
+
+        [InjectionMember]
+        public void SetLogger(ILogger logger)
+        {
+            this.logger = logger;
+        }
     }
 }

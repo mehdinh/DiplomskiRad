@@ -8,5 +8,11 @@ namespace CodeBlocks
 {
     public class MySpamFilter : ISpamFilter
     {
+        public MySpamFilter(ILogger logger)
+        {
+            this.logger = logger;
+        }
+
+        private ILogger logger;
     }
 }
