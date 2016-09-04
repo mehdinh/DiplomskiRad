@@ -50,9 +50,12 @@
     <Compile Include="ISpamFilter.cs" />
     <Compile Include="MySpamFilter.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="RepositoryConsumer.cs" />
+    <Compile Include="ServiceLocator.cs" />
     <Compile Include="UnstructuredSamples.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +63,11 @@
       <Project>{5a4844f4-c25c-4341-9300-550b89ef3cba}</Project>
       <Name>EmpiricaContainer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

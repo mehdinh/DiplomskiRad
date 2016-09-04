@@ -25,5 +25,10 @@ namespace CodeBlocks
 
             Bootstrap.Configure();
         }
+
+        public static void Main2()
+        {
+            ILogger logger = ServiceLocator.Resolve<ILogger>();
+        }
     }
 }
