@@ -47,6 +47,7 @@
     <Compile Include="FileLogger.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="InjectionMemberAttribute.cs" />
+    <Compile Include="IPersonRepository.cs" />
     <Compile Include="ISpamFilter.cs" />
     <Compile Include="MySpamFilter.cs" />
     <Compile Include="Person.cs" />
