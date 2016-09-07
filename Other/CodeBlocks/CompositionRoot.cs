@@ -28,7 +28,7 @@ namespace CodeBlocks
 
         public static void Main2()
         {
-            ILogger logger = ServiceLocator.Resolve<ILogger>();
+            ILogger logger = ServiceLocator.Resolve<ILogger>();            
         }
     }
 }

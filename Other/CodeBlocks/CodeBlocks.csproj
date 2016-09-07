@@ -43,13 +43,20 @@
     <Compile Include="Bootstrap.cs" />
     <Compile Include="CompositionRoot.cs" />
     <Compile Include="ConsoleLogger.cs" />
+    <Compile Include="DocxTextExtractor.cs" />
     <Compile Include="EmailService.cs" />
     <Compile Include="FileLogger.cs" />
+    <Compile Include="IExtension.cs" />
+    <Compile Include="LoggerDecorator.cs" />
+    <Compile Include="HtmlTextExtractor.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="InjectionMemberAttribute.cs" />
     <Compile Include="IPersonRepository.cs" />
     <Compile Include="ISpamFilter.cs" />
+    <Compile Include="ITextExtractor.cs" />
+    <Compile Include="ITextExtractorFactory.cs" />
     <Compile Include="MySpamFilter.cs" />
+    <Compile Include="PdfTextExtractor.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductRepository.cs" />
@@ -57,6 +64,8 @@
     <Compile Include="Repository.cs" />
     <Compile Include="RepositoryConsumer.cs" />
     <Compile Include="ServiceLocator.cs" />
+    <Compile Include="TextExtractorFactory.cs" />
+    <Compile Include="TextExtractorService.cs" />
     <Compile Include="UnstructuredSamples.cs" />
   </ItemGroup>
   <ItemGroup>

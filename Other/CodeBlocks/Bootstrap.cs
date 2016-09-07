@@ -23,6 +23,11 @@ namespace CodeBlocks
         {
             Container.Register<ILogger, ConsoleLogger>(Lifetime.Singleton);
             Container.Register<ISpamFilter, MySpamFilter>(Lifetime.Transient);
+
+            Container.Register<ITextExtractor, PdfTextExtractor>("Pdf");
+            Container.Register<ITextExtractor, DocxTextExtractor>("Docx");
+            Container.Register<ITextExtractor, PdfTextExtractor>("Html");
+            Container.Register<ITextExtractorFactory, TextExtractorFactory>();
         }
     }
 }
