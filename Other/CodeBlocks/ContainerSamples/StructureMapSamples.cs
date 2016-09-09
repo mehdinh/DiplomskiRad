@@ -14,7 +14,7 @@ namespace CodeBlocks
             container.Configure(c => c.For<ILogger>().Use<ConsoleLogger>());
             ILogger logger = container.GetInstance<ILogger>();
         }
-        public void Sample2()
+        public void SampleForAutoScan()
         {             
             var container = new StructureMap.Container(c =>
             {
