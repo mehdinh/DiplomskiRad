@@ -46,15 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrap.cs" />
+    <Compile Include="ExtensionFactory.cs" />
     <Compile Include="FMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="IArrayFuncionExtension.cs" />
-    <Compile Include="IArrayLoaderExtension.cs" />
-    <Compile Include="IExtension.cs" />
+    <Compile Include="IExtensionFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMain.resx">
@@ -81,6 +81,40 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Di\EmpiricaContainer\EmpiricaContainer.csproj">
+      <Project>{5a4844f4-c25c-4341-9300-550b89ef3cba}</Project>
+      <Name>EmpiricaContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArrayLab.ApplicationServices\ArrayLab.ApplicationServices.csproj">
+      <Project>{9b0944fd-9d5f-4e2f-8332-aca0ecd09562}</Project>
+      <Name>ArrayLab.ApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArrayLab.Domain\ArrayLab.Domain.csproj">
+      <Project>{b2d85dda-d24a-4046-bd77-edb4b9cd8dd8}</Project>
+      <Name>ArrayLab.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArrayLab.Infrastructure.Data.Ef\ArrayLab.Infrastructure.Data.Ef.csproj">
+      <Project>{ba6069ff-0545-43ab-819c-bdfdac0d043f}</Project>
+      <Name>ArrayLab.Infrastructure.Data.Ef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArrayLab.Infrastructure.Data.Xml\ArrayLab.Infrastructure.Data.Xml.csproj">
+      <Project>{a283149d-0000-41ab-80e2-18b4c9c6a4fc}</Project>
+      <Name>ArrayLab.Infrastructure.Data.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArrayLab.WinUi.ExtensionAbstractions\ArrayLab.WinUi.ExtensionAbstractions.csproj">
+      <Project>{86f62abf-711e-436d-b051-eb023ef202e5}</Project>
+      <Name>ArrayLab.WinUi.ExtensionAbstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\ArrayLab.CsvLoaderExtension\ArrayLab.CsvLoaderExtension.csproj">
+      <Project>{c121e14f-ef0a-46b3-ad45-50f5111d3b11}</Project>
+      <Name>ArrayLab.CsvLoaderExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\ArrayLab.FormEntryExtension\ArrayLab.FormEntryExtension.csproj">
+      <Project>{2ccc2f26-2e2f-4a3a-900b-29e547758a5f}</Project>
+      <Name>ArrayLab.FormEntryExtension</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

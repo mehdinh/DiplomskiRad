@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArrayLab.WinUi
+namespace ArrayLab.WinUi.ExtensionAbstractions
 {
-    public interface IArrayFuncionExtension : IExtension
+    public interface IExtension
     {
     }
 }
