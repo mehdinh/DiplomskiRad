@@ -43,6 +43,12 @@
     <Compile Include="ArrayDataRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArrayLab.Domain\ArrayLab.Domain.csproj">
+      <Project>{b2d85dda-d24a-4046-bd77-edb4b9cd8dd8}</Project>
+      <Name>ArrayLab.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

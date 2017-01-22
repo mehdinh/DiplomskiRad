@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B0944FD-9D5F-4E2F-8332-ACA0ECD09562}</ProjectGuid>
+    <ProjectGuid>{C121E14F-EF0A-46B3-AD45-50F5111D3B11}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArrayLab.ApplicationServices</RootNamespace>
-    <AssemblyName>ArrayLab.ApplicationServices</AssemblyName>
+    <RootNamespace>ArrayLab.CsvLoaderExtension</RootNamespace>
+    <AssemblyName>ArrayLab.CsvLoaderExtension</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,13 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArrayDataService.cs" />
+    <Compile Include="Extension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ArrayLab.Domain\ArrayLab.Domain.csproj">
-      <Project>{b2d85dda-d24a-4046-bd77-edb4b9cd8dd8}</Project>
-      <Name>ArrayLab.Domain</Name>
+    <ProjectReference Include="..\..\ArrayLab.WinUi.ExtensionAbstractions\ArrayLab.WinUi.ExtensionAbstractions.csproj">
+      <Project>{86f62abf-711e-436d-b051-eb023ef202e5}</Project>
+      <Name>ArrayLab.WinUi.ExtensionAbstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

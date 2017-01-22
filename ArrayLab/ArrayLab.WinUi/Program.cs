@@ -16,7 +16,10 @@ namespace ArrayLab.WinUi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FMain());
+            //Application.Run(new FMain());
+
+            Bootstrap.Configure();
+            Application.Run(Bootstrap.Container.Resolve<FMain>());
         }
     }
 }
