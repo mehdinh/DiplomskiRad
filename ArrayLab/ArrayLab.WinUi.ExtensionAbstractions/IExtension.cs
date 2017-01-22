@@ -8,5 +8,6 @@ namespace ArrayLab.WinUi.ExtensionAbstractions
 {
     public interface IExtension
     {
+
     }
 }
