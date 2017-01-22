@@ -8,9 +8,9 @@ namespace EmpiricaContainer
 {
     public interface IContainer
     {
-        void Register<TContract, TImplementation>(Lifetime lifetime = Lifetime.Transient);
+        void Register<TContract, TImplementation>(Lifetime lifetime = Lifetime.Singleton);
 
-        void Register<TContract, TImplementation>(string name, Lifetime lifetime = Lifetime.Transient);
+        void Register<TContract, TImplementation>(string name, Lifetime lifetime = Lifetime.Singleton);
 
         T Resolve<T>();
 

@@ -15,7 +15,7 @@ namespace EmpiricaContainer
         private IDictionary<Type, object> singletons = new Dictionary<Type, object>();
         private IDictionary<string, object> namedSingletons = new Dictionary<string, object>();
 
-        public void Register<TContract, TImplementation>(Lifetime lifetime = Lifetime.Transient)
+        public void Register<TContract, TImplementation>(Lifetime lifetime = Lifetime.Singleton)
         {
             if (typeRegistrations.ContainsKey(typeof(TContract)))
             {
@@ -42,7 +42,7 @@ namespace EmpiricaContainer
             typeRegistrations.Add(typeof(TContract), typeRegistration);
         }
 
-        public void Register<TContract, TImplementation>(string name, Lifetime lifetime = Lifetime.Transient)
+        public void Register<TContract, TImplementation>(string name, Lifetime lifetime = Lifetime.Singleton)
         {
             if (namedTypeRegistrations.ContainsKey(name))
             {
